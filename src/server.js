@@ -14,8 +14,6 @@ app.use(cors());
 
 app.use(routes);
 
-const PORT = 3333;
-
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3333, () => {
     return console.log(`server iniciado ${PORT}`);
 });
